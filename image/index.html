@@ -17,9 +17,69 @@
     <fieldset>
       <legend>Personal Data</legend>
       <label for="first">First name
-        <input type="text" />
+        <input type="text" id="first" name="first" />
+      </label>
+      <label for="last">Last name
+        <input type="text" id="last" name="last" />
+      </label>
+      <label for="street">Street
+        <input type="text" id="street" name="street" />
+      </label>
+      <label for="zipcode">Zipcode
+        <input type="text" id="zipcode" name="zipcode" />
+      </label>
+      <label for="city">City
+        <input type="text" id="city" name="city" />
+      </label>
+      <label for="phone">Phone
+        <input type="text" id="phone" name="phone" />
+      </label>
+      <label for="email">Email
+        <input type="text" id="email" name="email" />
+      </label>
+      <label for="comment">Comments
+        <input type="text" id="comment" name="comment" />
       </label>
     </fieldset>
+    <fieldset>
+      <legend>Products</legend>
+      <div class="web-design">
+        <h2>Web design</h2>
+        <label for="individual">Individual
+          <input type="radio" id="individual" name="web-design" />
+        </label>
+        <label for="template">Template
+          <input type="radio" id="template" name="web-design" />
+        </label>
+      </div>
+      <div class="web-development">
+        <h2>Web Development</h2>
+        <label for="html-css">HTML & CSS
+          <input type="checkbox" id="html-css" name="web-development" />
+        </label>
+        <label for="javascript">Javascript
+          <input type="checkbox" id="javascript" name="web-development" />
+        </label>
+        <label for="mongoDB">MongoDB
+          <input type="checkbox" id="mongoDB" name="web-development" />
+        </label>
+      </div>
+      <label for="project-start">Project Start
+        <input type="date" id="project-start" name="project-start" />
+      </label>
+      <label for="project-end">Project End
+        <input type="date" id="project-end" name="project-end" />
+      </label>
+      <label for="category">Category
+        <input list="categories" id="category" name="category" />
+        <datalist id="categories">
+          <option value="personal"></option>
+          <option value="business"></option>
+          <option value="other"></option>
+        </datalist>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Order our services">
   </form>
 </body>
 

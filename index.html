@@ -76,20 +76,22 @@
       </div>
       <label for="project-start">
         <p>Project Start</p>
-        <input type="date" id="project-start" name="project-start" class="boxes" />
+        <input type="date" id="project-start" name="project-start" placeholder="mm/dd/yyyy" class="boxes" />
       </label>
       <label for="project-end">
         <p>Project End
-        </p><input type="date" id="project-end" name="project-end" class="boxes" />
+        </p><input type="date" id="project-end" name="project-end" placeholder="mm/dd/yyyy" class="boxes" />
       </label>
       <label for="category">
         <p>Category</p>
-        <input list="categories" id="category" name="category" class="boxes" placeholder="personal" />
-        <datalist id="categories">
-          <option value="personal"></option>
-          <option value="business"></option>
-          <option value="other"></option>
-        </datalist>
+        <button>
+          <input list="categories" id="category" name="category" class="boxes" placeholder="personal" />
+          <datalist id="categories">
+            <option value="personal"></option>
+            <option value="business"></option>
+            <option value="other"></option>
+          </datalist>
+        </button>
       </label>
     </fieldset>
     <div class="submit">

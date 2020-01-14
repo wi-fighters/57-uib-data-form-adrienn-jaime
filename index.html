@@ -15,64 +15,76 @@
     <h1>Forms</h1>
   </header>
   <form action="#">
-    <fieldset>
-      <legend>Personal Data</legend>
-      <label for="first">First name
-        <input type="text" id="first" name="first" />
+    <fieldset class="first-box">
+      <legend class="heading">Personal Data</legend>
+      <label for="first">
+        <p>First name</p>
+        <input class="boxes" type="text" id="first" name="first" />
       </label>
-      <label for="last">Last name
-        <input type="text" id="last" name="last" />
+      <label for="last">
+        <p>Last name</p>
+        <input class="boxes" type="text" id="last" name="last" />
       </label>
-      <label for="street">Street
-        <input type="text" id="street" name="street" />
+      <label for="street">
+        <p>Street</p>
+        <input class="boxes" type="text" id="street" name="street" />
       </label>
-      <label for="zipcode">Zipcode
-        <input type="text" id="zipcode" name="zipcode" />
+      <label for="zipcode">
+        <p>Zipcode</p>
+        <input class="boxes" type="text" id="zipcode" name="zipcode" />
       </label>
-      <label for="city">City
-        <input type="text" id="city" name="city" />
+      <label for="city">
+        <p>City</p>
+        <input class="boxes" type="text" id="city" name="city" />
       </label>
-      <label for="phone">Phone
-        <input type="text" id="phone" name="phone" />
+      <label for="phone">
+        <p>Phone</p>
+        <input class="boxes" type="text" id="phone" name="phone" />
       </label>
-      <label for="email">Email
-        <input type="text" id="email" name="email" />
+      <label for="email">
+        <p>Email</p>
+        <input class="boxes" type="text" id="email" name="email" />
       </label>
-      <label for="comment">Comments
-        <input type="text" id="comment" name="comment" />
+      <label for="comment">
+        <p>Comments</p>
+        <input class="boxes" type="text" id="comment" name="comment" rows="5"
+          placeholder="Tell us more about important colors, etc" />
       </label>
     </fieldset>
-    <fieldset>
-      <legend>Products</legend>
-      <div class="web-design">
+    <fieldset class="second-box">
+      <legend class="heading">Products</legend>
+      <div class=" web-design">
         <h2>Web design</h2>
-        <label for="individual">Individual
-          <input type="radio" id="individual" name="web-design" />
+        <label for="individual">
+          <input type="radio" id="individual" name="web-design" />Individual
         </label>
-        <label for="template">Template
-          <input type="radio" id="template" name="web-design" />
+        <label for="template">
+          <input type="radio" id="template" name="web-design" />Template
         </label>
       </div>
       <div class="web-development">
         <h2>Web Development</h2>
-        <label for="html-css">HTML & CSS
-          <input type="checkbox" id="html-css" name="web-development" />
+        <label for="html-css">
+          <input type="checkbox" id="html-css" name="web-development" />HTML & CSS
         </label>
-        <label for="javascript">Javascript
-          <input type="checkbox" id="javascript" name="web-development" />
+        <label for="javascript">
+          <input type="checkbox" id="javascript" name="web-development" />Javascript
         </label>
-        <label for="mongoDB">MongoDB
-          <input type="checkbox" id="mongoDB" name="web-development" />
+        <label for="mongoDB">
+          <input type="checkbox" id="mongoDB" name="web-development" />MongoDB
         </label>
       </div>
-      <label for="project-start">Project Start
-        <input type="date" id="project-start" name="project-start" />
+      <label for="project-start">
+        <p>Project Start</p>
+        <input type="date" id="project-start" name="project-start" class="boxes" />
       </label>
-      <label for="project-end">Project End
-        <input type="date" id="project-end" name="project-end" />
+      <label for="project-end">
+        <p>Project End
+        </p><input type="date" id="project-end" name="project-end" class="boxes" />
       </label>
-      <label for="category">Category
-        <input list="categories" id="category" name="category" />
+      <label for="category">
+        <p>Category</p>
+        <input list="categories" id="category" name="category" class="boxes" placeholder="personal" />
         <datalist id="categories">
           <option value="personal"></option>
           <option value="business"></option>
@@ -80,7 +92,9 @@
         </datalist>
       </label>
     </fieldset>
-    <input type="submit" id="submit" value="Order our services">
+    <div class="submit">
+      <input type="submit" id="submit" value="Order our services">
+    </div>
   </form>
 </body>
 

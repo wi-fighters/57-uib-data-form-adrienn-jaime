@@ -1,2 +1,12 @@
-$main-font: Verdana,
-sans-serif;
+$main-font: "Courier New",
+Courier,
+monospace;
+
+@mixin heading {
+    color: rgb(104, 37, 148);
+    font-weight: 600;
+}
+
+@mixin titles {
+    font-weight: 600;
+}
